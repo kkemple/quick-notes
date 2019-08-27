@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "quicknotes",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authquicknotes9506fafe",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "quick-notes-dev-20190826145900-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/ee4bfa0c6412e981a6737ef7e6c6c6e4e3ba5653"
+}
