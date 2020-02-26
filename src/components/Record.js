@@ -146,7 +146,7 @@ export default props => {
             left: 0;
             position: absolute;
             border-radius: 50%;
-            background-color: #74b49b;
+            background-color: #7A9461;
             display: flex;
             cursor: pointer;
           `}

@@ -8,7 +8,7 @@ import Notes from "./Notes";
 import Record from "./Record";
 
 const Header = styled("div")`
-  background-color: #ffffff;
+  background-color: #F5F5F2;
   padding-left: 16px;
   padding-right: 16px;
   display: flex;
@@ -25,12 +25,12 @@ const Title = styled("h1")`
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  color: #74b49b;
+  color: #7A9461;
   font-size: 24px;
 `;
 
 const SignOutButton = styled(Button)`
-  background-color: #74b49b;
+  background-color: #7A9461;
   cursor: pointer;
 `;
 
@@ -53,8 +53,8 @@ const StyledTabList = styled(TabList)`
   box-shadow: 0 6px 6px rgba(116, 180, 155, 0.4);
 
   & > [data-selected] {
-    border-bottom-color: #74b49b;
-    color: #74b49b;
+    border-bottom-color: #7988AB;
+    color: #7A9461;
   }
 `;
 
@@ -78,7 +78,7 @@ const StyledTab = styled(Tab)`
   text-transform: uppercase;
   flex: 1;
   padding: 16px;
-  color: #74b49b;
+  color: #7A9461;
   background-color: #ffffff;
   font-size: 16px;
   border: none;
@@ -91,7 +91,7 @@ export default () => {
   return (
     <>
       <Header>
-        <Title>Quick Notes</Title>
+        <Title>Jerry's Notes</Title>
         <SignOutButton
           onClick={() => {
             Auth.signOut().then(() => window.location.reload());

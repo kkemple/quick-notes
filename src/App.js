@@ -8,8 +8,8 @@ import Screens from "./components/Screens";
 
 const Title = styled("h1")`
   text-align: center;
-  text-transform: uppercase;
-  color: #a7d7c5;
+  //text-transform: uppercase;
+  color: #7A9461;
   margin-bottom: 8px;
 `;
 
@@ -23,17 +23,20 @@ const theme = {
     borderRadius: "4px"
   },
   sectionHeader: {
-    color: "#74b49b"
+    color: "#77A8AB"
+  },
+  sectionHeaderContent: {
+    color: "#77A8AB"
   },
   sectionFooterSecondaryContent: {
-    color: "#303952"
+    color: "#77A8AB"
   },
   inputLabel: {
-    color: "#74b49b"
+    color: "#77A8AB"
   },
   input: {
     backgroundColor: "#f4f9f4",
-    color: "#74b49b"
+    color: "#77A8AB"
   },
   hint: {
     color: "#74b49b"
@@ -67,7 +70,9 @@ function App() {
     <Screens />
   ) : (
     <>
-      <Title>Quick Notes</Title>
+      <Title>Jerry's Notes</Title>
+      <br></br>
+      <img Style="float:left; margin-left:15%" src={"./jerry.gif"}></img>
       <Authenticator
         onStateChange={authState => {
           if (authState === "signedIn") {
